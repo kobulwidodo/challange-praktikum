@@ -1,4 +1,4 @@
-package com.example.challangepraktikum;
+package com.example.app;
 
 import org.junit.Test;
 
