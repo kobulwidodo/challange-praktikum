@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="#F1F0F2"
+        android:textSize="24sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register and Happy Shopping"
+        android:textColor="#504F5E"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/desc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/fullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="#F1F0F2"
+            android:textSize="16sp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <EditText
+            android:id="@+id/form_fullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:fontFamily="@font/poppins_medium"
+            android:drawableLeft="@drawable/icon_person"
+            android:drawablePadding="16dp"
+            android:hint="Your Full Name"
+            android:inputType="textPersonName"
+            android:textColorHint="#504f5e"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:padding="17dp"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="#F1F0F2"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/form_fullName"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <EditText
+            android:id="@+id/form_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:drawableLeft="@drawable/icon_button"
+            android:drawablePadding="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Your Username"
+            android:textColor="@color/white"
+            android:inputType="textPersonName"
+            android:textColorHint="#504f5e"
+            android:textSize="14sp"
+            android:padding="17dp"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Password"
+            android:textColor="#F1F0F2"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/form_fullName"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <EditText
+            android:id="@+id/form_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:drawableLeft="@drawable/icon_lock"
+            android:fontFamily="@font/poppins_medium"
+            android:drawablePadding="16dp"
+            android:hint="Your Password"
+            android:textColor="@color/white"
+            android:inputType="textPassword"
+            android:textColorHint="#504f5e"
+            android:textSize="14sp"
+            android:padding="17dp"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Sign Up"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:layout_marginTop="56dp"
+            android:background="@drawable/btn_blue"
+            android:theme="@style/Button.color"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/form_password"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/form"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txt_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/already_have_an_account"
+            android:textColor="#504F5E"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_medium"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/sign_in_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/sign_in"
+            android:textColor="#6C5ECF"
+            android:layout_marginStart="5dp"
+            android:textSize="12sp"
+            android:clickable="true"
+            android:fontFamily="@font/poppins_medium"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

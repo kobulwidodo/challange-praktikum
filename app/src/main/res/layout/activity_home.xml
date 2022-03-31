@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#1F1D2B"
+    android:paddingTop="30dp"
+    tools:context=".HomeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/greeting_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="30dp"
+            android:text="@string/hallo_username"
+            android:textColor="#F1F0F2"
+            android:textSize="24sp"
+            android:fontFamily="@font/poppins_semibold" />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/find_your_best_shoes_here"
+            android:textColor="#504F5E"
+            app:layout_constraintTop_toBottomOf="@id/greeting_name"
+            app:layout_constraintStart_toStartOf="@id/greeting_name"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <TextView
+            android:id="@+id/popular_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popular_product"
+            app:layout_constraintStart_toStartOf="@id/greeting_name"
+            app:layout_constraintTop_toBottomOf="@+id/welcome"
+            android:textColor="#F1F0F2"
+            android:textSize="22sp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins_medium" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/popular_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/popular_product"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal"
+            android:scrollbars="none"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/new_arrival"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_arrivals"
+            app:layout_constraintTop_toBottomOf="@+id/popular_recyclerview"
+            app:layout_constraintStart_toStartOf="@id/greeting_name"
+            android:textColor="#F1F0F2"
+            android:textSize="22sp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginTop="30dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/new_arrival_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/new_arrival"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal"
+            android:scrollbars="none"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/new_arrival_recyclerview"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:id="@+id/txt_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/want_to_see_people_behind_it"
+                android:textColor="#504F5E"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_medium"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/about_us_click"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/about_us"
+                android:textColor="#6C5ECF"
+                android:layout_marginStart="5dp"
+                android:textSize="12sp"
+                android:clickable="true"
+                android:fontFamily="@font/poppins_medium"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F1D2B"
+    tools:context=".MainActivity"
+    android:paddingHorizontal="30dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="24dp"
+        android:text="About Us"
+        android:fontFamily="@font/poppins_semibold"
+        android:textFontWeight="600"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14dp"
+        android:text="Great Team who made it"
+        android:textColor="#504F5E"
+        app:layout_constraintLeft_toLeftOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:id="@+id/team_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:layout_marginRight="200dp"
+        android:textSize="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Rakhmad Giffari Nurfadhilah"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@id/subtitle"
+        app:layout_constraintTop_toBottomOf="@id/subtitle" />
+
+    <TextView
+        android:id="@+id/nim_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14dp"
+        android:text="205150701111003"
+        android:textColor="#504F5E"
+        app:layout_constraintLeft_toLeftOf="@id/team_1"
+        app:layout_constraintTop_toBottomOf="@id/team_1" />
+
+    <TextView
+        android:id="@+id/team_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="200dp"
+        android:textSize="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Catherine Vania"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@id/nim_1"
+        app:layout_constraintTop_toBottomOf="@id/nim_1" />
+
+    <TextView
+        android:id="@+id/nim_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="14dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="205150700111001"
+        android:textColor="#504F5E"
+        app:layout_constraintLeft_toLeftOf="@id/team_2"
+        app:layout_constraintTop_toBottomOf="@id/team_2" />
+
+    <TextView
+        android:id="@+id/team_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="200dp"
+        android:textSize="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Andira Mahendra S"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@id/nim_2"
+        app:layout_constraintTop_toBottomOf="@id/nim_2" />
+
+    <TextView
+        android:id="@+id/nim_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="14dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="205150700111008"
+        android:textColor="#504F5E"
+        app:layout_constraintLeft_toLeftOf="@id/team_3"
+        app:layout_constraintTop_toBottomOf="@id/team_3" />
+
+    <TextView
+        android:id="@+id/team_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="200dp"
+        android:textSize="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Angga Nasetya C P"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@id/nim_3"
+        app:layout_constraintTop_toBottomOf="@id/nim_3" />
+
+    <TextView
+        android:id="@+id/nim_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="14dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="205150707111005"
+        android:textColor="#504F5E"
+        app:layout_constraintLeft_toLeftOf="@id/team_4"
+        app:layout_constraintTop_toBottomOf="@id/team_4" />
+
+    <TextView
+        android:id="@+id/team_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="200dp"
+        android:textSize="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Ardhya Chandra Krisna"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@id/nim_4"
+        app:layout_constraintTop_toBottomOf="@id/nim_4" />
+
+    <TextView
+        android:id="@+id/nim_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="14dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="205150700111006"
+        android:textColor="#504F5E"
+        app:layout_constraintLeft_toLeftOf="@id/team_5"
+        app:layout_constraintTop_toBottomOf="@id/team_5" />
+
+    <TextView
+        android:id="@+id/created_with"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Created With Love at"
+        android:textColor="#504F5E"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintTop_toBottomOf="@id/nim_5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/created_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Malang, Indonesia"
+        android:textColor="#6C5ECF"
+        android:fontFamily="@font/poppins_medium"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@id/created_with"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
