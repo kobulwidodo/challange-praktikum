@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.praktikumchallange.adapter.ShoesCardAdapter;
+import com.example.praktikumchallange.adapter.ArticleCardAdapter;
 import com.example.praktikumchallange.databinding.ActivityHomeBinding;
 
 public class HomeActivity extends AppCompatActivity {
@@ -21,9 +21,7 @@ public class HomeActivity extends AppCompatActivity {
         binding.greetingName.setText(this.getResources().getString(R.string.hallo_username, intent.getStringExtra("username")));
 
         binding.popularRecyclerview.setHasFixedSize(true);
-        binding.popularRecyclerview.setAdapter(new ShoesCardAdapter(this));
-        binding.newArrivalRecyclerview.setHasFixedSize(true);
-        binding.newArrivalRecyclerview.setAdapter(new ShoesCardAdapter(this));
+        binding.popularRecyclerview.setAdapter(new ArticleCardAdapter(this));
 
         binding.aboutUsClick.setOnClickListener(view -> aboutus());
     }

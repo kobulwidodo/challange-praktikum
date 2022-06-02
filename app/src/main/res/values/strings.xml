@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">Praktikum Challange</string>
-    <string name="find_your_best_shoes_here">Find your best shoes here</string>
+    <string name="app_name">Praktikum Challenge</string>
+<!--    <string name="find_your_best_shoes_here">%1$s</string>-->
+    <string name="find_your_best_shoes_here">fadhilhan01@gmail.com</string>
     <string name="popular_product">Popular Product</string>
     <string name="new_arrivals">New Arrivals</string>
     <string name="want_to_see_people_behind_it">Want to see people behind it?</string>
