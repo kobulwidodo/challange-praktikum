@@ -25,6 +25,8 @@
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1962962962962963" />
         <entry key="app/src/main/res/layout/activity_shoes_detail.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_signin.xml" value="0.29739583333333336" />
+        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.1" />
         <entry key="app/src/main/res/layout/shoes_card_item.xml" value="0.1" />
       </map>
     </option>

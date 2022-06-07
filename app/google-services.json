@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "43200827720",
+    "project_id": "project-akhir-pam-ccf6f",
+    "storage_bucket": "project-akhir-pam-ccf6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43200827720:android:5fada372f032a1eb39e37d",
+        "android_client_info": {
+          "package_name": "com.example.praktikumchallange"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "43200827720-o9hmn3b8ln215j4atuvpbqrotrpf9ovo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAxB0TxzfjLYY2eVDuT993nTCYbDlc5cE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "43200827720-o9hmn3b8ln215j4atuvpbqrotrpf9ovo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
