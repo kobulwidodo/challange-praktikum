@@ -13,6 +13,7 @@ import com.example.praktikumchallange.databinding.ActivitySigninBinding;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthInvalidUserException;
+import com.google.firebase.auth.FirebaseUser;
 
 public class SigninActivity extends AppCompatActivity {
 
@@ -29,6 +30,17 @@ public class SigninActivity extends AppCompatActivity {
 
         binding.buttonLogin.setOnClickListener(view -> login());
         binding.signUpTxt.setOnClickListener(view -> signup());
+    }
+
+    @Override
+    public void onStart(){
+        super.onStart();
+        FirebaseUser firebaseUser = mAuth.getCurrentUser();
+        if (firebaseUser != null) {
+            Toast.makeText(this, "You Already Loggedin", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, HomeActivity.class);
+            startActivity(intent);
+        }
     }
 
     private void login() {

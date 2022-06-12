@@ -21,12 +21,20 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/PraktikumChallange/app/src/main/res/layout/activity_signup.xml" value="0.33" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PraktikumChallange/app/src/main/res/layout/shoes_card_item.xml" value="0.358695652173913" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PraktikumChallange/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1755" />
+        <entry key="app/src/main/res/drawable/bg_column.xml" value="0.1675" />
+        <entry key="app/src/main/res/drawable/image_rounded.xml" value="0.1" />
         <entry key="app/src/main/res/layout-v26/activity_article_detail.xml" value="0.146875" />
+        <entry key="app/src/main/res/layout/activity_about_us.xml" value="0.29739583333333336" />
+        <entry key="app/src/main/res/layout/activity_article_detail.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_create_article.xml" value="0.29739583333333336" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1962962962962963" />
+        <entry key="app/src/main/res/layout/activity_main2.xml" value="0.29739583333333336" />
         <entry key="app/src/main/res/layout/activity_shoes_detail.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_signin.xml" value="0.29739583333333336" />
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/article_card_item.xml" value="0.29739583333333336" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/shoes_card_item.xml" value="0.1" />
       </map>
     </option>

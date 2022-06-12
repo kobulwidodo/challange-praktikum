@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#1F1D2B"
+    android:paddingHorizontal="15dp"
+    android:paddingTop="15dp">
+
+    <TextView
+        android:id="@+id/title_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="24sp"
+        android:text="Create Article"
+        android:fontFamily="@font/poppins_semibold"
+        android:textFontWeight="600"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="#F1F0F2"
+        android:textSize="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_section"/>
+
+    <EditText
+        android:id="@+id/title_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_input"
+        android:padding="17dp"
+        android:drawablePadding="16dp"
+        android:hint="Fill title here"
+        android:textColorHint="#504f5e"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Body"
+        android:textColor="#F1F0F2"
+        android:textSize="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_input"/>
+
+    <EditText
+        android:id="@+id/body_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_input"
+        android:padding="17dp"
+        android:drawablePadding="16dp"
+        android:hint="Fill body here"
+        android:textColorHint="#504f5e"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/body"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Image Cover"
+        android:textColor="#F1F0F2"
+        android:textSize="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/body_input"/>
+
+    <Button
+        android:id="@+id/file_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_column"
+        android:theme="@style/Button.color"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="16sp"
+        android:text="choose file"
+        android:textAllCaps="false"
+        android:textColor="#F1F0F2"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/file"/>
+
+    <TextView
+        android:id="@+id/file_name"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textColor="#F1F0F2"
+        android:textSize="12dp"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toEndOf="@id/file_input"
+        app:layout_constraintTop_toTopOf="@id/file_input"
+        app:layout_constraintBottom_toBottomOf="@id/file_input"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toBottomOf="@id/body_input"/>
+
+    <Button
+        android:id="@+id/button_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_column"
+        android:theme="@style/Button.color"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="16sp"
+        android:text="create"
+        android:textAllCaps="false"
+        android:textColor="#F1F0F2"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/file_input"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

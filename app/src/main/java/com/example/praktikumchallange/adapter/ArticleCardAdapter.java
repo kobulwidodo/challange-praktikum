@@ -11,21 +11,30 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.praktikumchallange.R;
 import com.example.praktikumchallange.ArticleDetailActivity;
-import com.example.praktikumchallange.data.DataSource;
+import com.example.praktikumchallange.dao.ArticleDAO;
 import com.example.praktikumchallange.model.Article;
 import com.google.android.material.card.MaterialCardView;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 public class ArticleCardAdapter extends RecyclerView.Adapter<ArticleCardAdapter.ArticleCardViewHolder> {
     private Context context;
-    ArrayList<Article> dataset;
+    ArrayList<Article> dataset = new ArrayList<>();
+    private final ArticleDAO articleDAO;
 
-    public ArticleCardAdapter(Context context) {
+    public ArticleCardAdapter(Context context, ArticleDAO articleDAO) {
         this.context = context;
-        dataset = new DataSource().articles;
+        this.articleDAO = articleDAO;
+    }
+
+    public void setListArticle(ArrayList<Article> listArticle) {
+        Collections.reverse(listArticle);
+        this.dataset = listArticle;
     }
 
     public static class ArticleCardViewHolder extends RecyclerView.ViewHolder {
@@ -54,15 +63,16 @@ public class ArticleCardAdapter extends RecyclerView.Adapter<ArticleCardAdapter.
     @Override
     public void onBindViewHolder(@NonNull ArticleCardViewHolder holder, int position) {
         Article item = dataset.get(position);
-        holder.imageResourceId.setImageResource(item.imageResourceId);
+        Glide.with(holder.imageResourceId).load(item.image).into(holder.imageResourceId);
         holder.title.setText(item.title);
         holder.publisher.setText(item.publisher);
         holder.card.setOnClickListener(view -> {
             Intent intent = new Intent(context, ArticleDetailActivity.class);
-            intent.putExtra("imageResourceId", item.imageDetailId);
+            intent.putExtra("imageResourceId", item.image);
             intent.putExtra("title", item.title);
             intent.putExtra("publisher", item.publisher);
             intent.putExtra("description", item.description);
+            intent.putExtra("key", item.key);
             context.startActivity(intent);
         });
     }

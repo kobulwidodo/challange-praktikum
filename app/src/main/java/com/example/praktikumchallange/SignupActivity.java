@@ -32,6 +32,17 @@ public class SignupActivity extends AppCompatActivity {
         binding.btnSignup.setOnClickListener(view -> signup());
     }
 
+    @Override
+    public void onStart(){
+        super.onStart();
+        FirebaseUser firebaseUser = mAuth.getCurrentUser();
+        if (firebaseUser != null) {
+            Toast.makeText(this, "You Already Loggedin", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, HomeActivity.class);
+            startActivity(intent);
+        }
+    }
+
     private void signup() {
         String email = binding.formEmail.getText().toString();
         String password = binding.formPassword.getText().toString();
